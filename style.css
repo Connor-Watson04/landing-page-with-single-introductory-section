@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(257, 40%, 49%);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.background-container {
+  position: absolute;
+}
+.mobile {
+  height: 0;
+  opacity: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  top: 30px;
+  left: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 705px 575px;
+  margin-left: 5rem;
+  padding-top: 7rem;
+  height: 500px;
+}
+
+.heading {
+  font-family: "poppins";
+  padding-right: 5rem;
+  font-size: 40px;
+}
+.text {
+  font-family: "open sans";
+  font-size: 17px;
+  margin-bottom: 1.6rem;
+  line-height: 1.6rem;
+}
+.content {
+  padding-left: 2rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 4rem;
+  font-size: 17px;
+  box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: hsl(257, 40%, 49%);
+}
+.btn:hover,
+.btn:active {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1.2rem;
+  margin-right: 3rem;
+}
+
+.footer-icon {
+  border: 2px solid #fff;
+  border-radius: 90%;
+  padding: 10px;
+  fill: #fff;
+}
+
+.footer-icon:hover,
+.footer-icon:active svg {
+  fill: hsl(300, 69%, 71%);
+  border: 2px solid hsl(300, 69%, 71%);
+}
+
+@media (max-width: 375px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 9rem;
+    padding: 0;
+  }
+  .app {
+    height: 175px;
+    width: 250px;
+    padding-right: 2rem;
+  }
+  .heading {
+    font-size: 25px;
+    padding: 0;
+  }
+  .icons {
+    margin: 0;
+    margin: 2.4rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    padding: 0 2rem;
+  }
+  .logo {
+    top: 45px;
+    left: 50px;
+    width: 300px;
+    height: 30px;
+    width: auto;
+  }
+  .mobile {
+    opacity: 1;
+    height: 400px;
+    width: 362px;
+    position: absolute;
+  }
+  .desktop {
+    height: 0;
+    opacity: 0;
+  }
+}
